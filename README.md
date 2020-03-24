@@ -5,12 +5,13 @@ Pada problem 4 queen ini digunakan algoritma backtracking, yaitu mencoba menaruh
 
 Fungsi untuk menaruh queen
 
-bool solveNQUtil(int board[N][N], int col) 
-{ 
+    bool solveNQUtil(int board[N][N], int col) 
+    { 
     /* base case: If all queens are placed 
       then return true */
     if (col >= N) 
         return true; 
+  
     /* Consider this column and try placing 
        this queen in all rows one by one */
     for (int i = 0; i < N; i++) { 
@@ -45,10 +46,9 @@ bool solveNQUtil(int board[N][N], int col)
         this colum col  then return false */
     return false; 
     } 
-
 Fungsi untuk mengecek apakah fungsi dari solveNQUtil mereturn false atau tidak
 
-bool solveNQ() 
+    bool solveNQ() 
     { 
     int board[N][N] = { { 0, 0, 0, 0 }, 
                         { 0, 0, 0, 0 }, 
