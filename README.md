@@ -74,14 +74,19 @@ Contoh dari algoritma BFS
 
 Step:
 1. node 1 dikunjungi terlebih dahulu
-2. lalu mengecek ke tetangganya yaitu 8, 5, 2
-3. mengecek tetangga yang paling kiri dulu yaitu 8, baru setelah itu mengecek 5 lalu 2
-4. mengecek tetangga dari 8 yaitu 6, 4, 3
-5. mengecek tetangga yang paling kiri dulu yaitu 6, baru setelah itu mengecek 4 lalu 3
-6. mengecek tetangga dari 5, namun 5 tidak mempunyai tetangga lagi
-7. mengecek tetangga dari 2, yaitu 9
-8. mengecek tetangga dari 6, yaitu 10 dan 7
-9. mengecek 10 terlebih dahulu lalu 7
-10. mengecek tetangga dari 4, 3, dan 9, namun node tersebut tidak mempunyai tetangga lagi, maka pencarian selesai
+2. lalu mengecek ke tetangganya yaitu 8, 5, 2 dan queue 8, 5 dan 2
+(queue : 8 5 2)
+3. mengecek queue pertama yaitu 8, mempunyai 3 tetangga yang belum di cek yaitu 6, 4 dan 3
+(queue :8 5 2 6 4 3)
+4. mengecek tetangga dari 8 yaitu 6, 4, 3. dan queue 6, 4 dan 3. lalu unqueue 8
+(queue :5 2 6 4 3)
+6. mengecek tetangga dari 5, namun 5 tidak mempunyai tetangga lagi, maka unqueue 5
+(queue :2 6 4 3)
+7. mengecek tetangga dari 2, yaitu 9, lalu queue 9 dan unqueue 2
+(queue :6 4 3 9)
+8. mengecek tetangga dari 6, yaitu 10 dan 7, lalu queue 10 dan 7, dan unqueue 6
+(queue :4 3 9 10 7)
+10. mengecek tetangga dari 4, 3, 9, 10 dan 7 namun node tersebut tidak mempunyai tetangga lagi, maka unqueue 4, 3, 9, 10, 7
+(queue :-)
 
 untuk penerapan pada 8 puzzle, kita mencari seperti contoh diatas, bila pada pertengahan step itu sudah ditemukan node final yang kita cari maka langsung di outputkan.
