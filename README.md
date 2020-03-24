@@ -77,4 +77,11 @@ Step:
 2. lalu mengecek ke tetangganya yaitu 8, 5, 2
 3. mengecek tetangga yang paling kiri dulu yaitu 8, baru setelah itu mengecek 5 lalu 2
 4. mengecek tetangga dari 8 yaitu 6, 4, 3
-5. mengecek tetangga yang paling kiri dulu yaitu 6,
+5. mengecek tetangga yang paling kiri dulu yaitu 6, baru setelah itu mengecek 4 lalu 3
+6. mengecek tetangga dari 5, namun 5 tidak mempunyai tetangga lagi
+7. mengecek tetangga dari 2, yaitu 9
+8. mengecek tetangga dari 6, yaitu 10 dan 7
+9. mengecek 10 terlebih dahulu lalu 7
+10. mengecek tetangga dari 4, 3, dan 9, namun node tersebut tidak mempunyai tetangga lagi, maka pencarian selesai
+
+untuk penerapan pada 8 puzzle, kita mencari seperti contoh diatas, bila pada pertengahan step itu sudah ditemukan node final yang kita cari maka langsung di outputkan.
