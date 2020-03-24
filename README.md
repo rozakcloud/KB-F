@@ -69,3 +69,4 @@ Fungsi untuk mengecek apakah fungsi dari solveNQUtil mereturn false atau tidak
 # 2. 8 Puzzle BFS
 Breadth First Search merupakan pencarian node tujuan dengan pencarian secara melebar, pertama kita mengunjungi node pertama lalu mengunjungi node yang bertetangga terlebih dahulu. Lalu mengunjungi node yang bertetangga dengan node yang telah dikunjungi.
 
+![F0hfQ](https://user-images.githubusercontent.com/61219666/77388940-2c271d80-6dc4-11ea-8004-471f64f0ff6c.gif)
