@@ -1,7 +1,7 @@
 # KB-F
 
-# 1. 4 Queen
-Pada problem 4 queen ini digunakan algoritma backtracking, yaitu mencoba menaruh queen dimulai dari kolom atas kiri atau kolom pertama baris pertama, lalu kita mencoba menaruh queen lain dan di cek apakah ada yang saling melawan atau tidak. Jika saat kita menaruh queen dan tidak ada yang saling melawan dengan queen lain maka baris dan kolomnya akan dijadikan sebagai bagian dari solusi, bila pada hasil akhir tidak ditemukan hasil yang tepat karena masih ada queen yang saling melawan, maka akan di backtrack dan return false.
+# 1. N Queen (4 & 8)
+Pada problem N queen ini digunakan algoritma backtracking, yaitu mencoba menaruh queen dimulai dari kolom atas kiri atau kolom pertama baris pertama, lalu kita mencoba menaruh queen lain dan di cek apakah ada yang saling melawan atau tidak. Jika saat kita menaruh queen dan tidak ada yang saling melawan dengan queen lain maka baris dan kolomnya akan dijadikan sebagai bagian dari solusi, bila pada hasil akhir tidak ditemukan hasil yang tepat karena masih ada queen yang saling melawan, maka akan di backtrack dan return false.
 
 Fungsi untuk menaruh queen
 
@@ -23,6 +23,8 @@ Fungsi untuk menaruh queen
            ld and rd are for left and right  
            diagonal respectively*/
         if ((ld[i - col + N - 1] != 1 && 
+        
+        
                   rd[i + col] != 1) && cl[i] != 1) { 
             /* Place this queen in board[i][col] */
             board[i][col] = 1; 
@@ -63,3 +65,7 @@ Fungsi untuk mengecek apakah fungsi dari solveNQUtil mereturn false atau tidak
     printSolution(board); 
     return true; 
     } 
+
+# 2. 8 Puzzle BFS
+Breadth First Search merupakan pencarian node tujuan dengan pencarian secara melebar, pertama kita mengunjungi node pertama lalu mengunjungi node yang bertetangga terlebih dahulu. Lalu mengunjungi node yang bertetangga dengan node yang telah dikunjungi.
+
