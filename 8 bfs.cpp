@@ -153,8 +153,8 @@ int main() {
 	// Value 0 is used for empty space 
 	int final[N][N] = { 
 		{1, 2, 3}, 
-		{5, 8, 6}, 
-		{0, 7, 4} 
+		{4, 5, 6}, 
+		{7, 8, 0} 
 	}; 
 
 	// Blank tile coordinates in initial 
