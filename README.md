@@ -35,6 +35,7 @@ A-B-D-H-E-I-C-F-G-J-K-L
 # 3. 8 Puzzle IDS
 Iterative Deepening Search merupakan pengembangan dari algoritma Depth First Search, IDS menggunakan konsep penelusuran secara DFS dimulai dari limit 1. Saat solusi belum ditemukan makan pencarian dilakukan lah iterasi ke-2, pencarian kini limitnya bertambah menjadi 1 level menjadi limit 2, bila solusi masih belum ditemukan lakukan kembali iterasi ke-3 dengan menambah limit 1 level menjadi limit 3. Begitu seterusnya hingga ditemukan solusi yang dicari.
 
+Contoh penelusuran dengan metode IDS:
 ![27857460-62fdcfb4-618f-11e7-89d2-661f304aa2dd](https://user-images.githubusercontent.com/61219666/80278697-a7148880-8722-11ea-85f1-2f7a9f373e03.png)
 
 # 4. 8 queen
