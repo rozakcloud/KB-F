@@ -108,7 +108,7 @@ Fungsi untuk mengecek apakah fungsi dari solveNQUtil mereturn false atau tidak
     return true; 
     } 
 
-# 2. 4 Queen
+# 9. 4 Queen
 Pada problem N queen ini digunakan algoritma backtracking, yaitu mencoba menaruh queen dimulai dari kolom atas kiri atau kolom pertama baris pertama, lalu kita mencoba menaruh queen lain dan di cek apakah ada yang saling melawan atau tidak. Jika saat kita menaruh queen dan tidak ada yang saling melawan dengan queen lain maka baris dan kolomnya akan dijadikan sebagai bagian dari solusi, bila pada hasil akhir tidak ditemukan hasil yang tepat karena masih ada queen yang saling melawan, maka akan di backtrack dan return false.
 
 Fungsi untuk menaruh queen
