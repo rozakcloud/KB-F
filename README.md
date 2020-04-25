@@ -26,7 +26,16 @@ Step:
 untuk penerapan pada 8 puzzle, kita mencari seperti contoh diatas, bila pada pertengahan step itu sudah ditemukan node final yang kita cari maka langsung di outputkan.
 
 # 2. 8 Puzzle DFS
-Depth-First Search merupakan
+Depth-First Search merupakan algoritma penelusuran pada struktur pohon berdasarkan kedalaman terlebih dahulu, simpul ditelusuri dari root kemudian ke salah satu simpul anaknya(biasanya prioritas ke kiri), lalu dari simpul tersebut akan dicari terus sampai pada simpul ujung yang tidak mempunyai anak lagi. setelah penelusuran sampai ke paling bawah, maka penelusuran akan kembali ke 1 level diatasnya dan mencari anak lainnya yang belum di telusuri.
+Contoh dari algoritma DFS:
+![DFS](https://user-images.githubusercontent.com/61219666/80278302-53ed0680-871f-11ea-9a81-41087906a74f.png)
+penelusuran dimulai dari root yaitu A
+A-B-D-H-E-I-C-F-G-J-K-L
+
+# 3. 8 Puzzle IDS
+Iterative Deepening Search merupakan pengembangan dari algoritma Depth First Search, IDS menggunakan konsep penelusuran secara DFS dimulai dari limit 1. Saat solusi belum ditemukan makan pencarian dilakukan lah iterasi ke-2, pencarian kini limitnya bertambah menjadi 1 level menjadi limit 2, bila solusi masih belum ditemukan lakukan kembali iterasi ke-3 dengan menambah limit 1 level menjadi limit 3. Begitu seterusnya hingga ditemukan solusi yang dicari.
+
+![27857460-62fdcfb4-618f-11e7-89d2-661f304aa2dd](https://user-images.githubusercontent.com/61219666/80278697-a7148880-8722-11ea-85f1-2f7a9f373e03.png)
 
 # 4. 8 queen
 Pada problem N queen ini digunakan algoritma backtracking, yaitu mencoba menaruh queen dimulai dari kolom atas kiri atau kolom pertama baris pertama, lalu kita mencoba menaruh queen lain dan di cek apakah ada yang saling melawan atau tidak. Jika saat kita menaruh queen dan tidak ada yang saling melawan dengan queen lain maka baris dan kolomnya akan dijadikan sebagai bagian dari solusi, bila pada hasil akhir tidak ditemukan hasil yang tepat karena masih ada queen yang saling melawan, maka akan di backtrack dan return false.
